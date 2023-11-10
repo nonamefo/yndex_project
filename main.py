@@ -10,7 +10,8 @@ class Window(QMainWindow):
 		self.setWindowTitle("sevas prodject")
 
 		self.setGeometry(100, 100, 1600, 900)
-
+		self.setFixedSize(1600, 900)
+		
 		self.image = QImage(self.size(), QImage.Format_RGB32)
 
 		self.image.fill(Qt.white)
